@@ -6,14 +6,32 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>miki的博客</title>
+  <title>markdown学习笔记 | miki的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="miki的博客">
-<meta property="og:url" content="http://yoursite.com/index.html">
+  <meta name="description" content="#1 认识markdownmarkdown的目标是实现易读易写，成为一种适用于网络的书写语言用Markdown格式写文本，通过支持markdown格式的浏览器或编辑器，就可以按相应的格式显示。
+2.markdown常用语法规则2.1标题# 标题一
+## 标题二
+### 标题三    
+以此类推直到标题六">
+<meta property="og:type" content="article">
+<meta property="og:title" content="markdown学习笔记">
+<meta property="og:url" content="http://yoursite.com/2017/02/20/markdown学习笔记/index.html">
 <meta property="og:site_name" content="miki的博客">
+<meta property="og:description" content="#1 认识markdownmarkdown的目标是实现易读易写，成为一种适用于网络的书写语言用Markdown格式写文本，通过支持markdown格式的浏览器或编辑器，就可以按相应的格式显示。
+2.markdown常用语法规则2.1标题# 标题一
+## 标题二
+### 标题三    
+以此类推直到标题六">
+<meta property="og:image" content="http://imgsrc.baidu.com/forum/pic/item/c6df8dfc1e178a8267e8dc1fff03738dab77e8b7.jpg">
+<meta property="og:updated_time" content="2017-02-21T09:16:19.478Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="miki的博客">
+<meta name="twitter:title" content="markdown学习笔记">
+<meta name="twitter:description" content="#1 认识markdownmarkdown的目标是实现易读易写，成为一种适用于网络的书写语言用Markdown格式写文本，通过支持markdown格式的浏览器或编辑器，就可以按相应的格式显示。
+2.markdown常用语法规则2.1标题# 标题一
+## 标题二
+### 标题三    
+以此类推直到标题六">
+<meta name="twitter:image" content="http://imgsrc.baidu.com/forum/pic/item/c6df8dfc1e178a8267e8dc1fff03738dab77e8b7.jpg">
   
     <link rel="alternative" href="/atom.xml" title="miki的博客" type="application/atom+xml">
   
@@ -153,16 +171,14 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-    <article id="post-markdown学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+            <article id="post-markdown学习笔记" class="article article-type-post " itemscope itemprop="blogPost">
   <div class="article-inner">
     
       <header class="article-header">
         
   
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/20/markdown学习笔记/">markdown学习笔记</a>
+    <h1 class="article-title" itemprop="name">
+      markdown学习笔记
     </h1>
   
 
@@ -180,11 +196,186 @@
 ## 标题二
 ### 标题三    
 </code></pre><p>以此类推直到标题六</p>
-        
-          <a class="article-more-a" href="/2017/02/20/markdown学习笔记/#more">more >></a>
-        
+<a id="more"></a>
+<h2 id="2-2引用"><a href="#2-2引用" class="headerlink" title="2.2引用"></a>2.2引用</h2><p>如果你需要引用一段文字，就需要用到引用格式</p>
+<p>显示效果：</p>
+<blockquote>
+<p>引用文字（要注意符号和文本间的空格）</p>
+</blockquote>
+<p>只需要在引用文本前添加<code>&gt;</code>这种尖括号即可</p>
+<h3 id="2-2-1引用嵌套"><a href="#2-2-1引用嵌套" class="headerlink" title="2.2.1引用嵌套"></a>2.2.1引用嵌套</h3><p>区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的<code>&gt;</code>：</p>
+<pre><code>&gt; 第一层引用
+&gt;
+&gt; &gt; 第二层引用
+&gt;
+&gt; 返回到第一层
+</code></pre><p>显示效果：</p>
+<blockquote>
+<p>第一层引用</p>
+<blockquote>
+<p>第二层引用</p>
+</blockquote>
+<p>返回到第一层</p>
+</blockquote>
+<h3 id="2-2-2引用其他要素"><a href="#2-2-2引用其他要素" class="headerlink" title="2.2.2引用其他要素"></a>2.2.2引用其他要素</h3><p>引用的区块内也可以使用其他的markdown语法，包括标题、列表、代码区块：</p>
+<pre><code>&gt; ## 这是一个标题
+&gt;
+&gt; 1. 第一行列表项
+&gt; 2. 第二行列表项
+&gt;
+</code></pre><p>显示效果：</p>
+<blockquote>
+<h2 id="这是一个标题"><a href="#这是一个标题" class="headerlink" title="这是一个标题"></a>这是一个标题</h2><ol>
+<li>第一行列表项</li>
+<li>第二行列表项</li>
+</ol>
+</blockquote>
+<h2 id="2-3列表"><a href="#2-3列表" class="headerlink" title="2.3列表"></a>2.3列表</h2><h3 id="2-3-1无序列表"><a href="#2-3-1无序列表" class="headerlink" title="2.3.1无序列表"></a>2.3.1无序列表</h3><p>无序列表使用星号<code>*</code>、加号<code>+</code>或减号<code>-</code>作为列表标记（每个符号与文字间要有一个空格活制表符）</p>
+<pre><code>*    Red
++    Green
+-    Blue
+</code></pre><p><code>*</code> Red 等同于 <code>+</code> Red 等同于 <code>-</code> Red</p>
+<h3 id="2-3-2有序列表"><a href="#2-3-2有序列表" class="headerlink" title="2.3.2有序列表"></a>2.3.2有序列表</h3><p>有序列表直接在文字前加<code>1.``2.``3.</code>序号</p>
+<pre><code>1.  Red
+2.  Green
+3.  Blue 
+</code></pre><h3 id="2-3-3包含段落的列表"><a href="#2-3-3包含段落的列表" class="headerlink" title="2.3.3包含段落的列表"></a>2.3.3包含段落的列表</h3><p>列表项目可以包含多个段落，每个项目下的段落都必须缩进 4 个空格或是 1 个制表符：</p>
+<pre><code>1.    我要一步一步往上爬  等待阳光静静看着它的脸
+      (注意要空一行)
+      小小的天有大大的梦想  重重的壳裹着轻轻地仰望 
+2.    我要一步一步往上爬  在最高点乘着叶片往前飞
+
+      小小的天流过的泪和汗  总有一天我有属于我的天
+</code></pre><p>显示效果：</p>
+<ol>
+<li><p>我要一步一步往上爬  等待阳光静静看着它的脸</p>
+<p>小小的天有大大的梦想  重重的壳裹着轻轻地仰望</p>
+</li>
+<li><p>我要一步一步往上爬  在最高点乘着叶片往前飞</p>
+<p>小小的天流过的泪和汗  总有一天我有属于我的天  </p>
+</li>
+</ol>
+<h3 id="2-3-4包含引用的列表"><a href="#2-3-4包含引用的列表" class="headerlink" title="2.3.4包含引用的列表"></a>2.3.4包含引用的列表</h3><p>如果要在列表项目内放进引用，那<code>&gt;</code>就需要缩进:</p>
+<pre><code>*    下面是引用文字
+    (注意要空一行)
+    &gt; 引用文字
+</code></pre><p>显示效果：</p>
+<ul>
+<li><p>下面是引用文字</p>
+<blockquote>
+<p>引用文字</p>
+</blockquote>
+</li>
+</ul>
+<h3 id="2-3-5包含代码区块的列表"><a href="#2-3-5包含代码区块的列表" class="headerlink" title="2.3.5包含代码区块的列表"></a>2.3.5包含代码区块的列表</h3><p>如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符:</p>
+<pre><code>*    一列表项包含一个列表区块
+
+        &lt;代码写在这里&gt;
+</code></pre><p>显示效果：</p>
+<ul>
+<li><p>一列表项包含一个代码区块</p>
+<p>   function mycode(){</p>
+<pre><code>return a+b;
+</code></pre><p>   }</p>
+</li>
+</ul>
+<h3 id="2-3-6一个特殊情况"><a href="#2-3-6一个特殊情况" class="headerlink" title="2.3.6一个特殊情况"></a>2.3.6一个特殊情况</h3><p>当然，项目列表很可能会不小心产生，像是下面这样的写法：</p>
+<pre><code>1986. What a great season.
+</code></pre><p>显示效果：</p>
+<ol>
+<li>What a great season.</li>
+</ol>
+<p>如果行首出现<code>数字——句点——空白</code>，要避免这样的情况，需要在句点前加入<code>\</code></p>
+<pre><code>1986\. What a great season.
+</code></pre><p>显示效果：</p>
+<p>1986. What a great season.</p>
+<h2 id="2-4代码"><a href="#2-4代码" class="headerlink" title="2.4代码"></a>2.4代码</h2><h3 id="2-4-1行内代码"><a href="#2-4-1行内代码" class="headerlink" title="2.4.1行内代码"></a>2.4.1行内代码</h3><p>即插入一个单词或一句代码的情况，使用`code`这样的形式插入</p>
+<h3 id="2-4-2多行代码"><a href="#2-4-2多行代码" class="headerlink" title="2.4.2多行代码"></a>2.4.2多行代码</h3><p>要在 Markdown 中建立代码区块很简单，只要简单地缩进 4 个空格或是 1 个制表符就可以：</p>
+<pre><code>这是一个普通段落
+
+    function mycode(){
+        return a+b;
+    }
+</code></pre><p>显示效果：<br>这是一个普通段落</p>
+<pre><code>function mycode(){
+    return a+b;
+}
+</code></pre><h2 id="2-5分割线"><a href="#2-5分割线" class="headerlink" title="2.5分割线"></a>2.5分割线</h2><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线：</p>
+<pre><code>* * *
+
+***
+
+*******
+
+- - -
+
+——————————————————————
+</code></pre><p>显示效果：</p>
+<hr>
+<hr>
+<hr>
+<hr>
+<hr>
+<h2 id="2-6超链接"><a href="#2-6超链接" class="headerlink" title="2.6超链接"></a>2.6超链接</h2><h3 id="2-6-1行内式"><a href="#2-6-1行内式" class="headerlink" title="2.6.1行内式"></a>2.6.1行内式</h3><p>链接文字都是用 [方括号] 来标记，在方块括号后面紧接着圆括号并插入网址链接即可，如果你还想要加上链接的title文字，只要在网址后面(注意有空格)，用双引号把 title 文字包起来即可：</p>
+<pre><code>欢迎来到[miki的博客](https://mikiMing.github.io)
+
+欢迎来到[miki的博客](https://mikiMing.github.io &quot;miki的github博客&quot;)
+</code></pre><p>显示效果：</p>
+<p>欢迎来到<a href="https://mikiMing.github.io" target="_blank" rel="external">miki的博客</a></p>
+<p>欢迎来到<a href="https://mikiMing.github.io" title="miki的github博客" target="_blank" rel="external">miki的博客</a></p>
+<h3 id="2-6-2参考式"><a href="#2-6-2参考式" class="headerlink" title="2.6.2参考式"></a>2.6.2参考式</h3><p>参考式链接的写法分两步：<br>文中写<code>[链接文字][id]</code>,在文本的任意位置添加<code>[id]:链接地址 &quot;title&quot;</code>：</p>
+<pre><code>我经常逛[掘金][1]、[简书][2]。
+
+[1]:https://gold.xitu.io/ &quot;掘金&quot;
+[2]:http://www.jianshu.com/ &quot;简书&quot;
+</code></pre><p>显示效果：</p>
+<p>我经常逛<a href="https://gold.xitu.io/" title="掘金" target="_blank" rel="external">掘金</a>、<a href="http://www.jianshu.com/" title="简书" target="_blank" rel="external">简书</a>。</p>
+<h3 id="2-6-3自动链接"><a href="#2-6-3自动链接" class="headerlink" title="2.6.3自动链接"></a>2.6.3自动链接</h3><p>Markdown 支持以比较简短的自动链接形式来处理网址和电子邮件信箱，只要是用方括号包起来，Markdown就会自动把它转成链接。一般网址的链接文字就和链接地址一样：</p>
+<pre><code>&lt;https://www.baidu.com/&gt;
+
+&lt;address@example.com&gt;
+</code></pre><p>显示效果：</p>
+<p><a href="https://www.baidu.com/" target="_blank" rel="external">https://www.baidu.com/</a></p>
+<p><a href="&#x6d;&#x61;&#105;&#108;&#116;&#x6f;&#x3a;&#97;&#100;&#100;&#x72;&#x65;&#x73;&#x73;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;">&#97;&#100;&#100;&#x72;&#x65;&#x73;&#x73;&#x40;&#x65;&#120;&#97;&#x6d;&#x70;&#108;&#x65;&#x2e;&#99;&#111;&#x6d;</a></p>
+<h2 id="2-7图片"><a href="#2-7图片" class="headerlink" title="2.7图片"></a>2.7图片</h2><h3 id="2-7-1行内式"><a href="#2-7-1行内式" class="headerlink" title="2.7.1行内式"></a>2.7.1行内式</h3><pre><code>![alt](url)
+![alt](url &quot;title&quot;)
+</code></pre><p>显示效果：</p>
+<p><img src="http://imgsrc.baidu.com/forum/pic/item/c6df8dfc1e178a8267e8dc1fff03738dab77e8b7.jpg" alt="夜华素素大婚" title="三生三世十里桃花"></p>
+<h3 id="2-7-2参考式"><a href="#2-7-2参考式" class="headerlink" title="2.7.2参考式"></a>2.7.2参考式</h3><pre><code>![alt][id]
+
+[id]:url &quot;title&quot;
+</code></pre><p>到目前为止，Markdown 还没有办法指定图片的宽高，如果你需要的话，你可以使用普通的 <code>&lt;img&gt;</code>标签。</p>
+<h2 id="2-8强调"><a href="#2-8强调" class="headerlink" title="2.8强调"></a>2.8强调</h2><p>Markdown使用星号<code>*</code>和底线<code>_</code>作为标记强调字词的符号，被<code>*</code> 或 <code>_</code> 包围的字词会被转成用 <code>&lt;em&gt;</code> 标签包围，用两个<code>*</code>或 <code>_</code> 包起来的话，则会被转成 <code>&lt;strong&gt;</code>：</p>
+<pre><code>*强调句一*
+_强调句二_
+**强调句三**
+__强调句四__
+</code></pre><p>显示效果：</p>
+<p><em>强调句一</em><br><em>强调句二</em><br><strong>强调句三</strong><br><strong>强调句四</strong></p>
+
       
 
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
       
     </div>
     <div class="article-info article-info-index">
@@ -193,18 +384,74 @@
       
 
       
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/20/markdown学习笔记/">展开全文 >></a>
-        </p>
-      
 
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="http://s.jiathis.com/qrcode.php?url=http://yoursite.com/2017/02/20/markdown学习笔记/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
       
       <div class="clearfix"></div>
     </div>
   </div>
 </article>
 
-
+  
+<nav id="article-nav">
+  
+  
+    <a href="/2017/02/20/hexo-github搭建博客——hexo安装/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">hexo + github搭建博客——hexo安装</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
 
 
 
@@ -212,116 +459,10 @@
 
 
   
-    <article id="post-hexo-github搭建博客——hexo安装" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/20/hexo-github搭建博客——hexo安装/">hexo + github搭建博客——hexo安装</a>
-    </h1>
+    <div class="duoshuo"></div>
   
 
-        
-        <a href="/2017/02/20/hexo-github搭建博客——hexo安装/" class="archive-article-date">
-  	<time datetime="2017-02-20T11:56:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-20</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        
-      
 
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/20/hexo-github搭建博客——hexo安装/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-    <article id="post-hello-world" class="article article-type-post  article-index" itemscope itemprop="blogPost">
-  <div class="article-inner">
-    
-      <header class="article-header">
-        
-  
-    <h1 itemprop="name">
-      <a class="article-title" href="/2017/02/19/hello-world/">Hello World</a>
-    </h1>
-  
-
-        
-        <a href="/2017/02/19/hello-world/" class="archive-article-date">
-  	<time datetime="2017-02-19T13:25:57.944Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-02-19</time>
-</a>
-        
-      </header>
-    
-    <div class="article-entry" itemprop="articleBody">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-
-      
-    </div>
-    <div class="article-info article-info-index">
-      
-      
-      
-
-      
-        <p class="article-more-link">
-          <a class="article-more-a" href="/2017/02/19/hello-world/">展开全文 >></a>
-        </p>
-      
-
-      
-      <div class="clearfix"></div>
-    </div>
-  </div>
-</article>
-
-
-
-
-
-
-
-
-  
-  
 
 
           </div>
@@ -343,8 +484,8 @@
     <script>
 	var yiliaConfig = {
 		mathjax: true,
-		isHome: true,
-		isPost: false,
+		isHome: false,
+		isPost: true,
 		isArchive: false,
 		isTag: false,
 		isCategory: false,
